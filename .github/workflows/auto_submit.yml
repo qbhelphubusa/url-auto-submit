@@ -5,6 +5,10 @@ on:
     - cron: '30 0,3,6,9,12,15,18,21 * * *'  # IST: 6:30AM, 9:30AM...
   workflow_dispatch:  # Manual trigger
 
+permissions:                    # ✅ IMPORTANT: Push permission
+  contents: write              # Allow writing to repo
+  actions: read                # Allow reading workflow logs
+
 jobs:
   auto-submit:
     runs-on: ubuntu-latest
@@ -17,6 +21,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}  # Explicit token
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
@@ -62,7 +67,7 @@ jobs:
 
       - name: 📤 Upload Logs (for download)
         if: always()
-        uses: actions/upload-artifact@v4  # ✅ UPDATED: v3 → v4
+        uses: actions/upload-artifact@v4
         with:
           name: automation-logs-${{ github.run_number }}
           path: |
