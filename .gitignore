@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ===========================================
+# Custom: Auto-submit project tracking files
+# ===========================================
+*.local
+!submitted_urls.json
+!automation.log
