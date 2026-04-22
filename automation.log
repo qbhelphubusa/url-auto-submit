@@ -1,0 +1,35 @@
+2026-04-22 16:50:36,279 - INFO - 🚀 Starting | URLs: 6
+2026-04-22 16:50:36,281 - INFO - ====== WebDriver manager ======
+2026-04-22 16:50:39,001 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 16:50:39,041 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 16:50:39,073 - INFO - There is no [linux64] chromedriver "147.0.7727.57" for browser google-chrome "147.0.7727" in cache
+2026-04-22 16:50:39,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 16:50:39,179 - INFO - WebDriver version 147.0.7727.57 selected
+2026-04-22 16:50:39,184 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.57/linux64/chromedriver-linux64.zip
+2026-04-22 16:50:39,185 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.57/linux64/chromedriver-linux64.zip
+2026-04-22 16:50:39,222 - INFO - Driver downloading response is 200
+2026-04-22 16:50:39,284 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 16:50:39,430 - INFO - Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.57]
+2026-04-22 16:50:43,139 - INFO - 📦 Pending: 6/6 URLs
+2026-04-22 16:50:56,375 - ERROR - ❌ Login failed: Message: 
+Stacktrace:
+#0 0x55dfd3b80afa <unknown>
+#1 0x55dfd3582265 <unknown>
+#2 0x55dfd35d4f76 <unknown>
+#3 0x55dfd35d51b1 <unknown>
+#4 0x55dfd36207d4 <unknown>
+#5 0x55dfd361d969 <unknown>
+#6 0x55dfd35c85cf <unknown>
+#7 0x55dfd35c9391 <unknown>
+#8 0x55dfd3b45fdb <unknown>
+#9 0x55dfd3b48f9d <unknown>
+#10 0x55dfd3b32798 <unknown>
+#11 0x55dfd3b49b30 <unknown>
+#12 0x55dfd3b19210 <unknown>
+#13 0x55dfd3b6dd48 <unknown>
+#14 0x55dfd3b6df18 <unknown>
+#15 0x55dfd3b7f56e <unknown>
+#16 0x7f96af09caa4 <unknown>
+#17 0x7f96af129c6c <unknown>
+
+2026-04-22 16:50:57,445 - INFO - ✨ Cycle complete
