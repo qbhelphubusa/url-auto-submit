@@ -2,21 +2,21 @@ name: 🔁 Auto URL Submit Every 3 Hours
 
 on:
   schedule:
-    - cron: '30 0,3,6,9,12,15,18,21 * * *'  # IST: 6AM,9AM,12PM... (UTC+5:30)
-  workflow_dispatch:  # Manual trigger button
+    - cron: '30 0,3,6,9,12,15,18,21 * * *'  # IST: 6:30AM, 9:30AM...
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   auto-submit:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      TZ: Asia/Kolkata  # Set timezone for logs
+      TZ: Asia/Kolkata
     
     steps:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Get full history for commit tracking
+          fetch-depth: 0
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
@@ -44,7 +44,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Add files if they exist
           if [ -f "submitted_urls.json" ]; then
             git add submitted_urls.json
           fi
@@ -52,7 +51,6 @@ jobs:
             git add automation.log
           fi
           
-          # Commit only if there are changes
           if ! git diff-index --quiet HEAD; then
             git commit -m "📝 Auto-update: $(date '+%Y-%m-%d %H:%M IST')"
             git push
@@ -64,7 +62,7 @@ jobs:
 
       - name: 📤 Upload Logs (for download)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # ✅ UPDATED: v3 → v4
         with:
           name: automation-logs-${{ github.run_number }}
           path: |
