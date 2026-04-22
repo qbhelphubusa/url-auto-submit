@@ -60,3 +60,26 @@ Stacktrace:
 2026-04-22 17:03:28,216 - INFO - 🔄 [6/6] https://www.douglascounty-ne.gov/wp-content/upload...
 2026-04-22 17:03:30,380 - INFO - ✅ Done: https://www.douglascounty-ne.gov/wp-content/uploads/images/vif_grant/2026/cdvfv/Hire-PPC-Expert-Los-Angeles-Paid-Advertising-Pro.pdf
 2026-04-22 17:03:31,449 - INFO - ✨ Cycle complete
+2026-04-22 22:09:29,022 - INFO - 🚀 Starting | URLs: 4
+2026-04-22 22:09:29,023 - INFO - ====== WebDriver manager ======
+2026-04-22 22:09:31,087 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 22:09:31,162 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 22:09:31,223 - INFO - There is no [linux64] chromedriver "147.0.7727.57" for browser google-chrome "147.0.7727" in cache
+2026-04-22 22:09:31,223 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 22:09:31,436 - INFO - WebDriver version 147.0.7727.57 selected
+2026-04-22 22:09:31,443 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.57/linux64/chromedriver-linux64.zip
+2026-04-22 22:09:31,444 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.57/linux64/chromedriver-linux64.zip
+2026-04-22 22:09:31,540 - INFO - Driver downloading response is 200
+2026-04-22 22:09:31,857 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-22 22:09:32,032 - INFO - Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.57]
+2026-04-22 22:09:36,165 - INFO - 📦 Pending: 4/4 URLs
+2026-04-22 22:09:37,377 - INFO - ✅ Login successful
+2026-04-22 22:09:37,377 - INFO - 🔄 [1/4] https://srf-reproduction.org/wp-content/uploads/fo...
+2026-04-22 22:09:39,542 - INFO - ✅ Done: https://srf-reproduction.org/wp-content/uploads/formidable/20/HoWtoBuYSoMaOnLineFrOmHoMeDeLiveRy.pdf
+2026-04-22 22:09:41,044 - INFO - 🔄 [2/4] https://srf-reproduction.org/wp-content/uploads/fo...
+2026-04-22 22:09:43,188 - INFO - ✅ Done: https://srf-reproduction.org/wp-content/uploads/formidable/20/HoWtoBuYXaNaxOnLineFrOmHoMeDeLiveRyyy.pdf
+2026-04-22 22:09:44,690 - INFO - 🔄 [3/4] https://srf-reproduction.org/wp-content/uploads/fo...
+2026-04-22 22:09:46,836 - INFO - ✅ Done: https://srf-reproduction.org/wp-content/uploads/formidable/20/HoWtoBuYValIumOnLineFrOmHoMeDeLiveRy.pdf
+2026-04-22 22:09:48,338 - INFO - 🔄 [4/4] https://srf-reproduction.org/wp-content/uploads/fo...
+2026-04-22 22:09:50,479 - INFO - ✅ Done: https://srf-reproduction.org/wp-content/uploads/formidable/20/HoWtoBuYAmbIenOnLineFrOmHoMeDeLiveRy.pdf
+2026-04-22 22:09:51,548 - INFO - ✨ Cycle complete
